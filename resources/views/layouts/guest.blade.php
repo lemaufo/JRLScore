@@ -15,11 +15,11 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-24 sm:pt-0 bg-white dark:bg-slate-950">
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-24 sm:pt-0 bg-slate-950 dark:bg-slate-950">
             <!-- Texto de bienvenida -->
             @if (request()->routeIs('login'))
                 <div class="mb-12 mt-12">
-                    <h2 class="text-2xl font-normal text-gray-950 dark:text-white">{{ __('Bienvenido, inicia sesión!') }}</h2>
+                    <h2 class="text-2xl font-normal text-white dark:text-white">{{ __('Bienvenido, inicia sesión!') }}</h2>
                 </div>
             @endif
 
@@ -31,7 +31,7 @@
                 </a>
             </div>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-slate-950 overflow-hidden sm:rounded-lg">
+            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-slate-950 dark:bg-slate-950 overflow-hidden sm:rounded-lg">
                 {{ $slot }}
             </div>
         </div>
