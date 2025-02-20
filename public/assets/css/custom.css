@@ -10,30 +10,22 @@
     margin: 0;
   }
   
-#fondo{
+  #fondo{
     position: relative;
     height: 100vh;
-}
+  }
 
-#fondo .fondo-bg{
+  #fondo .fondo-bg{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('../img/fondo-bg-error.jpg');
+    background-color: rgb(2 6 23 / var(--tw-bg-opacity, 1));
     background-size: cover;
-}
-
-/* #fondo .fondo-bg:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 0, 36, 0.7);
-  } */
+  }
 
   #fondo .error {
     position: absolute;
-    left: 50%;
+    left: 48%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -53,52 +45,75 @@
   }
 
   .error .error-404 h1 {
-    font-family:  "Rubik", sans-serif;
+    font-family:  "Ubuntu", sans-serif;
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    font-size: 220px;
+    font-size: 200px;
     font-weight: 700;
     margin: 0px;
     color: #fff;
-    text-transform: uppercase;
     letter-spacing: 10px;
   }
 
   .error h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
     font-weight: 700;
-    text-transform: uppercase;
     color: #fff;
     margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
 
-  .error .btn-inicio, .error .btn-contacto{
-    font-family: 'Montserrat', sans-serif;
+  .error, .error {
+    font-family: 'Verdana', sans-serif;
     display: inline-block;
     font-weight: 700;
     text-decoration: none;
-    background-color: #263C50;
+    background-color: rgb(2 6 23 / var(--tw-bg-opacity, 1));
     border: 2px solid transparent;
-    text-transform: uppercase;
-    padding: 13px 25px;
+    /* text-transform: uppercase; */
+    padding: 13px 40px; /* Aumenta el padding horizontal */
     font-size: 18px;
-    border-radius: 40px;
+    border-radius: 10px; /* Menos curvatura para mejorar la forma */
     margin: 7px;
-    -webkit-transition: 0.2s all;
     transition: 0.2s all;
-    color: aliceblue;
+    color: blue;
+    
+    /* Hace que el botón tenga forma de romboide */
+    display: inline-block;
+    transform: skewX(-20deg); /* Inclina el botón */
+    text-align: center;
+  }
+
+  .btn-inicio{
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #2672EF;
+    border: 2px solid #9EC3FF;
+    padding: 13px 40px; /* Aumenta el padding horizontal */
+    font-size: 20px;
+    border-radius: 10px; /* Menos curvatura para mejorar la forma */
+    margin: 7px;
+    transition: 0.2s all;
+    color: white !important;
+    
+    /* Hace que el botón tenga forma de romboide */
+    display: inline-block;
+    transform: skewX(-20deg); /* Inclina el botón */
+    text-align: center;
   }
 
   .error .btn-inicio:hover{
-    background-color: black;
+    background-color: #4787ed;
   }
-  
-  .error .btn-contacto:hover{
-    background-color: black;
+
+  .image-error{
+    width: 160px;
+    height: 160px;
   }

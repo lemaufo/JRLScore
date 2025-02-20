@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
     <head>
-        <title>Title</title>
+        <title>JRLScore - Página no encontrada</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -32,11 +32,16 @@
                     {{-- <div>
                         <i class="{{ $iconError }}"></i>
                     </div> --}}
+                    <div>
+                        <a href="#">
+                            <img src="{{ asset('images/error_image.png') }}" class="image-error">
+                        </a>
+                    </div>
                     <div class="error-404">
                         <h1>{{ $numError }}</h1>
                     </div>
                     <h2>{{ $messageError }}</h2>
-                    <a href="#" class="btn-inicio">Inicio</a>
+                    <a href="{{ route('login') }}" class="btn-inicio">Ir a inicio</a>
                     {{-- <a href="#" class="btn-contacto">Contactos</a> --}}
                     
                 </div>
