@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
+    <div class="mb-4 text-sm text-gray-400 dark:text-gray-400">
         {{ __('¿Olvidaste tu contraseña? No hay problema. Ingresa tu email y te enviaremos un link para reestablecerla.') }}
     </div>
 
@@ -12,7 +12,7 @@
         <!-- Email Address -->
         <div>
             <x-input-label for="email" :value="__('Correo')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus placeholder="Ingresa tu email"/>
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus placeholder="Ingresa tu correo electrónico"/>
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 

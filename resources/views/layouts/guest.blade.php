@@ -19,7 +19,7 @@
             <!-- Texto de bienvenida -->
             @if (request()->routeIs('login'))
                 <div class="mb-12 mt-12">
-                    <h2 class="text-2xl font-normal text-white dark:text-white">{{ __('Bienvenido, inicia sesión!') }}</h2>
+                    <h2 class="text-2xl font-normal text-white dark:text-white">{{ __('¡Bienvenido, inicia sesión!') }}</h2>
                 </div>
             @endif
 
